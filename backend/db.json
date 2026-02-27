@@ -1,0 +1,44 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Frontend React Developer",
+      "company": "Nova Tech",
+      "location": "Remote",
+      "type": "Full-time",
+      "salaryMin": 70000,
+      "salaryMax": 95000,
+      "description": "Build and maintain modern React interfaces and collaborate with design and backend teams."
+    },
+    {
+      "id": 2,
+      "title": "Backend Node.js Engineer",
+      "company": "CloudForge",
+      "location": "Austin",
+      "type": "Full-time",
+      "salaryMin": 80000,
+      "salaryMax": 110000,
+      "description": "Design REST APIs, optimize database queries, and improve backend reliability."
+    },
+    {
+      "id": 3,
+      "title": "UI/UX Intern",
+      "company": "PixelMint",
+      "location": "New York",
+      "type": "Internship",
+      "salaryMin": 20000,
+      "salaryMax": 30000,
+      "description": "Support product designers with wireframes, prototypes, and design system updates."
+    }
+  ],
+  "applications": [],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@jobboard.com",
+      "password": "admin123",
+      "name": "Admin",
+      "role": "admin"
+    }
+  ]
+}
