@@ -1,4 +1,4 @@
-# Job Application Portal (React + JSON Server)
+# Job Application Portal (React + MongoDB)
 
 A simple job application app with:
 - Public job listing and filtering
@@ -9,24 +9,35 @@ A simple job application app with:
 
 ## Run locally
 
-1. Start API server:
+1. Create the backend env file:
 
 ```bash
-npx json-server --watch backend/db.json --port 5000 --routes backend/routes.json
+copy backend/.env.example backend/.env
 ```
 
-2. Start React app:
+2. Update `backend/.env` with your MongoDB Atlas connection string.
+   The example file also includes an optional direct-host URI fallback for environments where SRV DNS lookups fail.
+
+3. Start API server:
+
+```bash
+npm run server
+```
+
+4. Start React app in a second terminal:
 
 ```bash
 npm start
 ```
 
-3. Open `http://localhost:3000`
+5. Open `http://localhost:3000`
 
 ## Admin credentials
 
 - Email: `admin@jobboard.com`
 - Password: `admin123`
+
+The backend seeds the initial jobs and admin user from `backend/db.json` the first time it connects to an empty database.
 
 ## Project structure
 
@@ -38,4 +49,5 @@ npm start
 - `src/context` global state providers
 - `src/hooks` custom hooks for contexts
 - `src/services/api.js` API integration
-- `backend/db.json` JSON Server data
+- `backend/server.js` Express + MongoDB API
+- `backend/db.json` seed data
